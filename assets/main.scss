@@ -1,21 +1,67 @@
 ---
 ---
 
+/* Font: loads Nunito Sans from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap");
+
+/* My palette: pastel versions of fluorescent protein colors */
+$mist:     #fbfafd;  /* page background */
+$lavender: #eeeaf6;  /* header and footer */
+$mint:     #cdeee0;  /* soft GFP green */
+$blush:    #f6d3df;  /* soft mCherry pink */
+$plum:     #6b5a96;  /* name, headings and links */
+$ink:      #3f3a4a;  /* body text */
+
+/* Theme settings: these must come before the import */
+$base-font-family: "Nunito Sans", "Segoe UI", Helvetica, Arial, sans-serif;
+$base-font-size:   19px;
+$base-line-height: 1.7;
+$text-color:       $ink;
+$background-color: $mist;
+$brand-color:      $plum;
+$grey-color:       #6a6379;
+$content-width:    720px;
+
 @import "minima";
 
-body {
-  background-color: #fcf2fc;
-  font-family: Helvetica Neue;
-}
-
-h1, h2 {
-  color: #120812;
-}
-
-a {
-  color: #39103b;
-}
+/* My own styles */
 
 .site-header {
-  border-top: 5px solid #5a2a6e;
+  background-color: $lavender;
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, $mint, $blush) 1;
+  border-bottom: none;
+}
+
+.site-title,
+.site-title:visited {
+  color: $plum;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3 {
+  color: $plum;
+  font-weight: 300;
+}
+
+h2 {
+  margin-top: 1.6em;
+}
+
+.page-content a {
+  text-decoration: underline;
+  text-decoration-color: $blush;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.page-content a:hover {
+  color: $plum;
+  text-decoration-color: $plum;
+}
+
+.site-footer {
+  background-color: $lavender;
+  border-top: none;
 }
