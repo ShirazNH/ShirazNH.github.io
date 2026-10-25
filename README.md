@@ -1,4 +1,4 @@
-![Shiraz Nir Halber](images/shiraz.JPG)
+![Shiraz Nir Halber](Images/shiraz.JPG)
 
 PhD student at the [Oren-Suissa lab](https://www.weizmann.ac.il/brain-sciences/labs/oren/)
 
